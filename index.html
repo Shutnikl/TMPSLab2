@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Depot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Car Depot</h1>
+    <form id="car-form">
+      <div>
+        <label for="car-brand">Brand:</label>
+        <input type="text" id="car-brand" name="car-brand" required>
+      </div>
+      <div>
+        <label for="car-model">Model:</label>
+        <input type="text" id="car-model" name="car-model" required>
+      </div>
+      <div>
+        <label for="car-color">Color:</label>
+        <input type="color" id="car-color" name="car-color">
+      </div>
+      <button type="submit">Add Car</button>
+    </form>
+    <div class="view-buttons">
+      <button id="basic-view-button">Basic View</button>
+      <button id="colorful-view-button">Colorful View</button>
+    </div>
+    <ul id="car-list"></ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
